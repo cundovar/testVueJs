@@ -1,6 +1,8 @@
 
 
 <template>
+
+
  <h1>
     get name peint
 </h1>
@@ -11,7 +13,7 @@
               
               {{peintItem.name}}
           </p>
-          <img :class="m-auto " :src="'https://bac.varascundo.com/images/oeuvre/'+peintItem.image " class="w-10 h-10 "/>
+          <img  :src="'https://bac.varascundo.com/images/oeuvre/'+peintItem.image " class="w-10 h-10 "/>
         </li>
     </ul>
 

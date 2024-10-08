@@ -24,21 +24,13 @@ import Apibanque from './components/api/Apibanque.vue';
 
 
 <template>
-<h1>bonjour <span class="text-pink-600">{{ nom.toUpperCase() }} </span> </h1>
-<p>comment aller vous ?</p>
-<p>comteur = {{ count }}</p>
-<div class="space-x-5 flex">
+ <div>
+  
 
-  <button class="border p-2 focus:text-purple-500 text-2xl" v-on:click="incrementaion" >+  </button> <span class="border rounded-full w-10 h-10 flex justify-center items-center bg-violet-300 p-3 "> 
-    <div class="relative  h-4 w-2" >
-      <p class="absolute bottom-0 m-0 p-0"> {{ increment }}</p> 
+    <router-view></router-view>
+  </div>
 
-    </div>
 
-</span> <button type="button" class="text-2xl  border p-2" @click="increment--">-</button>
-</div>
-
-<Apibanque/>
 
 </template>
 

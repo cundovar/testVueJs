@@ -1,5 +1,5 @@
 <template>
-<nav class="  h-14 flex  border">
+<nav class=" w-full h-14 flex  border">
 
     <div class="w-2/3 border flex">
     <div class="border w-14 h-14">burger</div>
@@ -26,7 +26,7 @@
 
 <script>
 export default{
-    name:'Nav',
+    name:'NavTravail',
     
 }
 

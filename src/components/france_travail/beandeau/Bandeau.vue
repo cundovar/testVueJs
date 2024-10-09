@@ -1,12 +1,28 @@
 <template>
     <div class="bandeau w-full  relative bg-red-400   h-[31rem] ">
+        <div class="absolute bottom-0 h-20  text-white border flex justify-around w-full">
+      
+                <div class="transform -translate-y-1/2 ">
+                    <div class="rounded-full w-20 h-20 bg-red-300 "></div>
+                    <p>M'actualiser</p>
+                </div>
+                <div class="transform -translate-y-1/2 ">
+                    <div class="rounded-full w-20 h-20 bg-red-300"></div>
+
+                    <p>plus de services</p>
+                </div>
 
 
-        <div class=" z100 h-full  w-full flex-col space-y-10 p-5 top-0 absolute m-auto border flex justify-center items-center">
+          
+        </div>
 
 
-            <div class="mt-10">
-                <h1 class="text-3xl text-white " > 1 073 968 offres d'emploi disponibles</h1>
+        <div
+            class=" z100 h-full  w-full flex-col space-y-10 p-5 top-0 absolute m-auto border flex justify-center items-center">
+
+
+            <div class="mt-">
+                <h1 class="text-3xl text-white "> 1 073 968 offres d'emploi disponibles</h1>
             </div>
 
             <div class="search-container space-x-2 flex">
@@ -18,24 +34,12 @@
 
                 <button class="search-btn">🔍</button>
             </div>
-  
-            <p>
+
+            <p class="">
                 rechercher dezs offres par regios ou pas secteur d'activité
             </p>
 
-            <div class="flex justify-around w-full">
-                <div>
-                    <div class="rounded-full w-20 h-20 bg-red-300"></div>
-                      <p>m'actualiser</p>
-                </div>
-                <div>
-                    <div class="rounded-full w-20 h-20 bg-red-300"></div>
-
-<p>plus de services</p>
-                </div>
-
-
-            </div>
+           
 
 
         </div>
@@ -68,7 +72,6 @@ export default {
     background-size: cover;
     /* Pour s'assurer que l'image couvre tout le conteneur */
 }
-
 
 .search-container {}
 

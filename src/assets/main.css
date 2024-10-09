@@ -4,3 +4,14 @@
 
 @import './base.css';
 
+
+*{
+
+    box-sizing: border-box;
+    color: #414042;
+}
+
+p{
+    font-size: 12px;
+}
+

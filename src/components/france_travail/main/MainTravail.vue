@@ -1,47 +1,70 @@
 <template>
 
-<div class="w-full">
+    <div class="w-full space-y-5 entreprise">
 
-    <div class="flex flex-col justify-center items-center">
-      <h1>
-        Entreprise
-      </h1>
-      <p> Vous êtes une entreprise ou un particulier employeur ? France Travail vous propose un espace dédié !</p>
+        <div class="flex flex-col space-y-5 justify-center items-center">
+            <div class="">
+                <h1 class="text-3xl">
+                    Entreprise
+                </h1>
+                <div class="border w-16 mt-3 m-auto">
 
-      <div class="flex grap-3">
-        <button type="button" class="p-1 rounded-xl  bg-lime-600 ">
-            ENTREPRISE
-        </button>
+                </div>
 
-        <button type="button" class="p-1 rounded-s-lg bg-emerald-600">
-        PARTICULIER EMPLOYEUR
-        </button>
+            </div>
+            <p> Vous êtes une entreprise ou un particulier employeur ? France Travail vous propose un espace dédié !</p>
+
+            <div class="flex gap-3">
+                <button type="button" class=" but m-auto text-white rounded-xl p-2  bg-lime-600 ">
+                    ENTREPRISE
+                </button>
+
+                <button type="button" class=" but text-white rounded-xl p-2  bg-emerald-600">
+                    PARTICULIER EMPLOYEUR
+                </button>
 
 
-      </div>
+            </div>
 
-    </div>
-
-    <div class="w-full flex flex-col pt-20 h-[100rem] pl-5 pr-5 bg-slate-300  items-center">
-
-        <h1> Actualités de l'emploi</h1>
-
-        <div class=" bg-slate-100 w-full h-96 ">
-            gg
         </div>
 
+        <div class="w-full flex flex-col pt-20  bg-slate-200 items-center">
+
+            <h1 class="text-3xl"> Actualités de l'emploi</h1>
+
+            <ArticleFetch />
+
+        </div>
+
+
+
+
     </div>
-
-
-
-
-</div>
 </template>
 
+<style>
+.entreprise {
+    padding: 15px 25px;
+}
+
+.but{
+    font-size: 10px;
+}
+</style>
 
 <script>
-export default{
-    name:"MainTravail"
+import ArticleFetch from './ArticleFetch.vue';
+
+
+
+
+
+
+export default {
+    name: "MainTravail",
+    components: {
+        ArticleFetch
+    }
 }
 
 </script>

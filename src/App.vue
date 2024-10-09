@@ -1,6 +1,6 @@
   <script setup>
   import {ref} from 'vue'
-import Apibanque from './components/api/Apibanque.vue';
+
 
 
   const nom="john"

@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import Bandeau from '@/components/france_travail/beandeau/Bandeau.vue';
+import FootTravail from '@/components/france_travail/footer/FootTravail.vue';
 import MainTravail from '@/components/france_travail/main/MainTravail.vue';
-import Nav from '@/components/france_travail/nav/Nav.vue';
+import NavTravail from '@/components/france_travail/nav/NavTravail.vue';
+
 </script>
 
 
@@ -9,9 +11,11 @@ import Nav from '@/components/france_travail/nav/Nav.vue';
 
 <template>
 <div class=" border">
-<Nav/>
+<NavTravail/>
 <Bandeau/>
 <MainTravail/>
+<FootTravail/>
+
 
 
 

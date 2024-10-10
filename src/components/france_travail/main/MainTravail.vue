@@ -43,9 +43,7 @@
 </template>
 
 <style>
-.entreprise {
-    padding: 15px 25px;
-}
+
 
 .but{
     font-size: 10px;
@@ -53,6 +51,7 @@
 </style>
 
 <script>
+
 import ArticleFetch from './ArticleFetch.vue';
 
 
@@ -64,6 +63,7 @@ export default {
     name: "MainTravail",
     components: {
         ArticleFetch
+       
     }
 }
 

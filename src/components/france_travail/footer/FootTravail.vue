@@ -22,7 +22,7 @@ export default {
     <footer class="w-full flex flex-wrap pt-10   text-white">
        
         <div class="flex w-full ">
-            <div class="w-1/2">
+            <div class="w-1/2 ">
 
                 <FooterComponent :footer="footers[0]" />
 

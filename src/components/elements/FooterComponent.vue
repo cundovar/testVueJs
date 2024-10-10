@@ -1,10 +1,10 @@
 
 <template>
    
-<div class="  w-full  flex">
+<div class="  w-full justify-center  flex">
   <div class=" space-y-3">
 <div class="">
-  <h4 class=" " >{{ footer.title }}</h4 >
+  <h4 class="text-white " >{{ footer.title }}</h4 >
 <div class="bg-white mt-2 w-14 h-1" :style="{ backgroundColor: footer.color }"></div>
 
 </div>

@@ -3,13 +3,15 @@
         <div class="absolute bottom-0 h-20  text-white border flex justify-around w-full">
       
                 <div class="transform -translate-y-1/2 ">
-                    <div class="rounded-full w-20 h-20 bg-red-300 "></div>
-                    <p>M'actualiser</p>
-                </div>
-                <div class="transform -translate-y-1/2 ">
-                    <div class="rounded-full w-20 h-20 bg-red-300"></div>
+                   <ButtonRed label="M'actualiser"/>
 
-                    <p>plus de services</p>
+                </div>
+
+
+                <div class="transform -translate-y-1/2 ">
+                   
+                  <ButtonRed label="plus de services"/>
+                   
                 </div>
 
 
@@ -36,7 +38,7 @@
             </div>
 
             <p class="">
-                rechercher dezs offres par regios ou pas secteur d'activité
+                rechercher des offres par regios ou pas secteur d'activité
             </p>
 
            
@@ -51,9 +53,14 @@
 
 
 <script>
+import ButtonRed from '@/components/common/ButtonRed.vue';
+
 
 export default {
-    name: "Bandeau"
+    name: "Bandeau",
+    components:{
+        ButtonRed
+    }
 }
 
 </script>

@@ -1,5 +1,5 @@
 <template>
-<nav class=" w-full h-14 flex  border">
+<nav class=" w-full h-14 flex fixed  border">
 
     <div class="w-2/3 border flex">
     <div class="border w-14 flex h-14">
@@ -30,7 +30,19 @@
 </div>
 
 
-<div class="border w-1/3">connect</div>
+<div class="border flex w-1/3">
+
+    <div class="w-10 h-10  z200">
+        <font-awesome-icon :icon="['fa', 'user']" size="xl" />
+
+    </div>
+
+    <div class="">
+        
+    </div>
+
+
+</div>
   
 </nav>
 
@@ -40,6 +52,8 @@
 
 <script>
 import { eventBus } from '@/eventBus';
+import '@/icons/icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 export default{
     name:'NavTravail',
@@ -47,6 +61,9 @@ export default{
         toggleMenu(){
             eventBus.emit("toggle-menu")
         }
+    },
+    components:{
+   FontAwesomeIcon
     }
     
 }

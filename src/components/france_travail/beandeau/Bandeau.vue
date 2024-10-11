@@ -1,5 +1,5 @@
 <template>
-    <div class="bandeau w-full  relative    h-[31rem] ">
+    <div class="bandeau w-full mt-14  relative    h-[31rem] ">
         <div class="absolute bottom-0  h-28  text-white border flex justify-around w-full">
       
              

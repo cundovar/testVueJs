@@ -5,12 +5,16 @@ export const Menu=[
 
     new MenuNav(
         "INFORMATION",
-        "Conseil Candidat",
+        ['fa', 'user'],
+        "Conseil Candidat"{
+"fff"
+        },
         "Actualités",
         "En région"
     ),
     new MenuNav(
         "LES PORTAILS PERSONALISÉ",
+        ['fas', 'globe'],
         "Spectacle",
         "Mobilité insternationale ",
         "Emploi Store",

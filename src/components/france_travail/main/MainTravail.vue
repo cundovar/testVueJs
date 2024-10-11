@@ -1,37 +1,42 @@
 <template>
 
     <div class="w-full space-y-5 entreprise">
-
-        <div class="flex flex-col space-y-5 justify-center items-center">
+         
+        <div class="flex flex-col space-y-2 justify-center items-center">
             <div class="">
-                <h1 class="text-3xl">
+                <h1 class="text-3xl mt-5">
                     Entreprise
                 </h1>
-                <div class="border w-16 mt-3 m-auto">
+                <div class="border w-12 mt-3 m-auto">
 
                 </div>
 
             </div>
-            <p> Vous êtes une entreprise ou un particulier employeur ? France Travail vous propose un espace dédié !</p>
+            <p class="text-center p-3 pt-0 text-sm"> Vous êtes une entreprise ou un particulier employeur ? France Travail vous propose un espace dédié !</p>
 
             <div class="flex gap-3">
-                <button type="button" class=" but m-auto text-white rounded-xl p-2  bg-lime-600 ">
-                    ENTREPRISE
-                </button>
+              <ButtonGlobal
+               label="ENTREPRISE"
+                color="bg-lime-600"
+                colorText="text-white"
+                />
 
-                <button type="button" class=" but text-white rounded-xl p-2  bg-emerald-600">
-                    PARTICULIER EMPLOYEUR
-                </button>
+              <ButtonGlobal 
+              label="PARTICULIER EMPLOYEUR"
+               color="bg-emerald-600"
+               colorText="text-white"
+               />
 
+           
 
             </div>
 
         </div>
 
-        <div class="w-full flex flex-col pt-20  bg-slate-200 items-center">
+        <div class="w-full flex flex-col pt-12  bg-slate-200 items-center">
 
-            <h1 class="text-3xl"> Actualités de l'emploi</h1>
-
+            <h1 class="text-3xl pb-16"> Actualités de l'emploi</h1>
+            <HautMain/>
             <ArticleFetch />
 
         </div>
@@ -52,7 +57,9 @@
 
 <script>
 
+import ButtonGlobal from '@/components/common/ButtonGlobal.vue';
 import ArticleFetch from './ArticleFetch.vue';
+import HautMain from './HautMain.vue';
 
 
 
@@ -62,7 +69,9 @@ import ArticleFetch from './ArticleFetch.vue';
 export default {
     name: "MainTravail",
     components: {
-        ArticleFetch
+        ArticleFetch,
+        ButtonGlobal,
+        HautMain
        
     }
 }

@@ -34,20 +34,18 @@ export default{
 
     <div class="mb-6" v-for="menus in Menu" :key="menus.title" >
         <div class="border-b-2   pb-3 ">
-         
-         <h4> {{ menus.title }}  </h4>
+            <h4> {{ menus.title }}  </h4>
         </div>
-        <div class=" border">
-
-            <div class=" w-10/12 m-auto flex items-center p-2 border-b"  v-for="(subTitle, index) in menus.subTitle" :key="index">
-                <p class="text-sm">
-                 <div class="">
-                     <font-awesome-icon :icon="menus.icon" size="xl" />
+        <div class=" mt-2">
+            
+            <div class="w-10/12 m-auto flex items-center p-2 border-b space-x-7" v-for="(subTitle, index) in menus.subTitle" :key="index">
+                <div class=" w-10 flex justify-center items-center">
+                    <font-awesome-icon :icon="subTitle.icon" size="xl" :style="{ color: subTitle.color || '#8f8f8f' }" />
+                   
                 </div>
-                 {{ subTitle }}
-    
-             </p> 
-            </div>
+        <p class="text-sm">{{ subTitle.text }}</p>
+      </div>
+            
 
         </div>
     </div>

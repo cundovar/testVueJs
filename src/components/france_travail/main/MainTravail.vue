@@ -1,10 +1,11 @@
 <template>
+<main class="entreprise  bg-slate-200  ">
 
-    <div class="w-full space-y-5 entreprise">
+    <div class="w-full xl:w-4/6 m-auto space-y-5 ">
          
-        <div class="flex flex-col space-y-2 justify-center items-center">
+        <div class="flex flex-col xl:hidden space-y-2 bg-white p-7 justify-center items-center">
             <div class="">
-                <h1 class="text-3xl mt-5">
+                <h1 class="text-3xl ">
                     Entreprise
                 </h1>
                 <div class="border w-12 mt-3 m-auto">
@@ -33,9 +34,9 @@
 
         </div>
 
-        <div class="w-full flex flex-col pt-12  bg-slate-200 items-center">
+        <div class="w-full  flex flex-col pt-12 items-center">
 
-            <h1 class="text-3xl pb-16"> Actualités de l'emploi</h1>
+            <h1 class="text-3xl lg:text-center border xl:w-1/6 lg:w-2/6 pb-16"> Actualités de l'emploi</h1>
             <HautMain/>
             <ArticleFetch />
 
@@ -45,6 +46,10 @@
 
 
     </div>
+
+
+
+</main>
 </template>
 
 <style>

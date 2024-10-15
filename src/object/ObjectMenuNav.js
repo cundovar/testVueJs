@@ -4,7 +4,7 @@ export default class MenuNav {
       this.subTitle = subTitle; // Un tableau avec des objets qui contiennent un texte et une icône
     }
   }
-  const colorIcon='#e87889'
+  export const colorIcon='#e87889'
   
   export const Menu = [
     new MenuNav("INFORMATION", [

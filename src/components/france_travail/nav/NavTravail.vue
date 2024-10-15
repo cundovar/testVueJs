@@ -1,5 +1,5 @@
 <template>
-<nav class=" w-full h-14 bg-white flex fixed z200 border">
+<nav class=" w-full h-16 bg-white flex fixed overflow-hidden z200 border">
 
     <div class="w-2/3 border flex">
     <div class="border w-14 flex h-14">
@@ -16,12 +16,9 @@
         <img class=" w-full h-full object-cover" src="/public/images/logo.webp"/>
     </div>
 
-    <div class="flex">
-        <div>
-            
-
-        </div>
-        <div class="max-xl:hidden">
+    <div class="flex w-full">
+      
+        <div class="max-xl:hidden w-full flex justify-center items-center">
             <img src="/public/images/banniere.gif" alt="">
         </div>
 
@@ -30,15 +27,16 @@
 </div>
 
 
-<div class="border flex justify-end items-center w-1/3">
+<div class="border flex justify-end sm:space-x-4 items-center w-1/3">
 
-    <div class="w-10 h-10 flex justify-center items-center   z200">
+    <div class="h-10 flex justify-center items-center   z200">
         <font-awesome-icon :icon="['fa', 'user']" size="xl"  :style="{color:colorIcon}" />
-
+            <h6 class="hidden sm:block text-sm ">CONNEXION</h6>
     </div>
 
-    <div class="w-10 h-10 flex justify-center items-center ">
+    <div class="h-10 flex justify-center items-center ">
         <font-awesome-icon :icon="['fa', 'magnifying-glass']" size="xl" :style="{color:colorIcon}"  />
+        <p class="hidden sm:block text-sm ">RECHERCHER</p>
     </div>
 
 

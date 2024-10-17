@@ -1,10 +1,13 @@
 <template>
   <div :class="[' flex justify-center items-center', customClass]">
 
-    <div class="transform bg-oange-400 h-full  relative -translate-y-1/2 ">
+    <div class="transform bg-oange-400 h-full active:border border-black  hover:bg-red focus:border-black  relative -translate-y-1/2 ">
       <div class="h-auto  bg-blck w-32 flex justify-center items-center">
-        <div class="rounded-full cursor-pointer z200 w-20 h-20 flex  flex-col justify-center items-center bg-red-300">
-          <font-awesome-icon :icon="logo" size="2xl" :style="{ color: colorIcon }" />
+        <div class="rounded-full shadow-2xl  cursor-pointer z100 w-20 h-20 flex  flex-col justify-center items-center bgRounded">
+          <div class="h-full w-full flex justify-center items-center   rounded-full transition-all ease-in-out   shadow-inner hover:shadow-stone-400 shadow-slate-50 duration-300">
+
+            <font-awesome-icon :icon="logo" size="2xl"  />
+          </div>
         </div>
 
       </div>
@@ -21,7 +24,7 @@
 <script>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import "@/icons/icons"
-import { colorIcon } from '@/object/ObjectMenuNav';
+
 export default {
   name: "Buttonred",
   props: {
@@ -38,6 +41,7 @@ export default {
       Required: true
 
     }
+  
  
   },
   components: {
@@ -46,3 +50,9 @@ export default {
 }
 
 </script>
+
+<style>
+.bgRounded{
+  background-color: rgb(255, 89, 80);
+}
+</style>

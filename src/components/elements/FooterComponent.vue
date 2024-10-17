@@ -4,8 +4,8 @@
 <div class="  w-full justify-center  flex">
   <div class=" space-y-3">
 <div class="">
-  <h4 class="text-white " >{{ footer.title }}</h4 >
-<div class="bg-white mt-2 w-14 h-1" :style="{ backgroundColor: footer.color }"></div>
+  <h6 class="text-white text-center " >{{ footer.title }}</h6 >
+<div class="m-auto mt-2 w-14 h-[5px]" :style="{ backgroundColor: footer.color }"></div>
 
 </div>
     <ul class="flex w-full flex-col">

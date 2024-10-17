@@ -44,6 +44,37 @@ export const articles=[
         
         '/public/images/main/bloc/notredame.jpg'
     ),
+    new Article(
+        "Place de l’emploi est de retour à partir du 10 septembre",
+
+        "Retrouvez la Place de l’emploi dans plus de 50 villes dans 7 régions : Normandie, Auvergne Rhône Alpes, IDF, Grand Est, PACA, Occitanie et Bourgogne Franche-Comté.",
+        
+        '/public/images/main/bloc/place.gif'
+    ),
+    new Article(
+        "Assistez à la conférence en ligne 'Entreprendre selon votre profil et vos ambitions'",
+
+        "Rendez-vous mardi 22 octobre en ligne, de 9h à 10h45.",
+        
+        '/public/images/main/bloc/Franchise.png'
+    ),
+    new Article(
+        "Les journées Nationales de la Réparation sont de retour en 2024 !",
+
+        "Les journées nationales de la réparation ont pour objectif de valoriser les initiatives visant à réparer et à prolonger la durée de vie de nos objets.",
+        
+        '/public/images/main/bloc/journee.gif'
+    ),
+    new Article(
+        "Métiers de la voirie : tracez votre route !",
+
+        "Prêt pour un job de terrain ? Dans la grande famille des métiers de la voirie et réseaux divers (VRD), découvrez les missions 100% essentielles du maçon, de l’agent",
+        
+        '/public/images/main/bloc/voirie.jpg'
+    ),
+    
+    
+    
     
     
     

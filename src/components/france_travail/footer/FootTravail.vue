@@ -19,9 +19,9 @@ export default {
 
 <template>
 
-    <footer class="w-full flex flex-wrap pt-10   text-white">
+    <footer class="w-full flex  flex-wrap pt-10 md:h-80 md:items-center md:justify-center text-white">
        
-        <div class="flex w-full ">
+        <div class="flex md:w-1/2 xl:w-1/3 w-full ">
             <div class="w-1/2 ">
 
                 <FooterComponent :footer="footers[0]" />
@@ -36,9 +36,9 @@ export default {
         </div>
         
         
-<div class="w-full flex">
+<div class="w-full md:w-1/2 xl:w-1/3 flex">
 
-    <div class=" w-1/2  flex  p-1 m-1" v-for="footer in footers.slice(2) " :key="footer.title">
+    <div class=" w-1/2 xl:w-1/2 flex  max-md:p-1 max-md:m-1" v-for="footer in footers.slice(2) " :key="footer.title">
         <FooterComponent :footer="footer" />
     </div>
 

@@ -1,9 +1,11 @@
-<script setup lang="ts">
+<script setup ">
 import Bandeau from '@/components/france_travail/beandeau/Bandeau.vue';
 import FootTravail from '@/components/france_travail/footer/FootTravail.vue';
 import MainTravail from '@/components/france_travail/main/MainTravail.vue';
 import MenuNav from '@/components/france_travail/nav/MenuNav.vue';
 import NavTravail from '@/components/france_travail/nav/NavTravail.vue';
+import { onBeforeMount, onMounted } from 'vue';
+
 
 </script>
 
@@ -11,7 +13,8 @@ import NavTravail from '@/components/france_travail/nav/NavTravail.vue';
 
 
 <template>
-<div class=" relative border">
+<div class=" relative border  ">
+   
 <NavTravail/>
 <MenuNav/>
 <Bandeau/>
@@ -24,3 +27,11 @@ import NavTravail from '@/components/france_travail/nav/NavTravail.vue';
 
 </div> 
 </template>
+
+
+<style>
+.noScroll{
+    overflow: hidden;
+}
+
+</style>

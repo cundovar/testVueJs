@@ -8,7 +8,7 @@
                 <div class="w-2/3  space-x-2 flex pl-2 items-center">
                     <div class=" w-10 h-10  flex justify-center bg-black bg-opacity-40 items-center rounded-full p-1 self-start ">
 
-                        <font-awesome-icon :icon="['fa', 'user']" size="md" :style="{ color: colorIcon }" />
+                        <font-awesome-icon :icon="['fa', 'user']"   />
                     </div>
                     <p class="w-3/4 flex justify-start items-start ">
                         Entreprise
@@ -24,7 +24,7 @@
                 <div class="w-2/3  space-x-2 flex pl-2 items-center">
                     <div class=" w-10 h-10  flex justify-center bg-black bg-opacity-40 items-center rounded-full p-1 self-start ">
 
-                        <font-awesome-icon :icon="['fa', 'user']" size="md" :style="{ color: colorIcon }" />
+                        <font-awesome-icon :icon="['fa', 'user']" />
                     </div>
                     <p class="w-3/4 flex justify-start items-start ">
                         Particulier 
@@ -61,17 +61,23 @@
 
             </div>
 
-<div class="relative flzx justify-center w-20 h-20  ">
+<div class="relative flx justify-center w-20 h-20  ">
     
-                <ButtonRed customClass="relative" @click="togglesServices" :logo="['fa', 'ellipsis']"
+                <ButtonRed customClass="relative clicOn " @click="togglesServices" :logo="['fa', 'ellipsis']"
                     label="plus de services" />
     
     
                 <div v-if="isServiceVisible"
-                    class="z200 absolute  max-md:hidden border h-20 bg w-32">
+                    class="z200 absolute sm:rounded-2xl sm:translate-x-1/2 right-32 max-sm:right-0 max-sm:fixed max-sm:w-screen max-sm:h-screen max-sm:top-0 border max-sm:backdrop-blur-xl bg-slate-100 max-sm:bg-black max-sm:bg-opacity-50 text-white ">
 
-                    <div class="max-xl:hidden">
+                    <div class="max-sm:hidden">
                         <RoundedXl/>
+                    </div>
+                    <div class="max-sm:block sm:hidden mt-20 relative">
+                        <h1 class="text-white  absolute right-3 top-0 z-300 p-5">
+                            <font-awesome-icon :icon="['fas', 'xmark']" @click="togglesServices"   />
+                        </h1>
+                           <RoundedSm/>
                     </div>
                    
                 </div>
@@ -97,14 +103,14 @@
                     <div class="relative flex xl:w-1/2 items-center w-full border">
                         <input class="input-item  w-full text-stone-500 text-[0.8rem] "
                             type="text" placeholder="Métier, compétence, mot-clé, n° d'offre">
-                            <font-awesome-icon :icon="['fas', 'briefcase']" class="absolute left-2 top-1/2 transform -translate-y-1/2" size="md" style="color: #a2a7ae;" />
+                            <font-awesome-icon :icon="['fas', 'briefcase']" class="absolute left-2 top-1/2 transform -translate-y-1/2"  style="color: #a2a7ae;" />
                         </input>
 
                     </div>
                     <div class="relative flex xl:w-1/2 items-center w-full border">
                         <input class="input-item  w-full text-stone-500 text-[0.8rem] "
                             type="text" placeholder="lieu de travail">
-                            <font-awesome-icon :icon="['fas', 'location-dot']" class="absolute left-2 top-1/2 transform -translate-y-1/2" size="md" style="color: #a2a7ae;" />
+                            <font-awesome-icon :icon="['fas', 'location-dot']" class="absolute left-2 top-1/2 transform -translate-y-1/2"  style="color: #a2a7ae;" />
                         </input>
 
                     </div>
@@ -139,6 +145,7 @@ import "@/icons/icons"
 import { colorIcon } from '@/object/ObjectMenuNav';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import RoundedXl from './roundedbox/roundedXl.vue';
+import RoundedSm from './roundedbox/roundedSm.vue';
 
 
 export default {
@@ -146,10 +153,13 @@ export default {
     components: {
         ButtonRed,
         FontAwesomeIcon,
-        RoundedXl
+        RoundedXl,
+        RoundedSm
     }, data() {
         return {
-            isServiceVisible: false
+            isServiceVisible: false,
+            colorIcon,
+            
         }
     },
     methods: {

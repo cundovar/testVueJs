@@ -45,3 +45,6 @@ h6{
 .bg4{
     background-color: #599D78;
 }
+.z300{
+    z-index: 1002;
+}

@@ -19,10 +19,10 @@ export default {
 
 <template>
 
-    <footer class="w-full flex  flex-wrap pt-10 md:h-80 md:items-center md:justify-center text-white">
+    <footer class="w-full flex  flex-wrap pt-10 max-sm:pb-20 md:h-80 md:items-start md:justify-center text-white">
        
-        <div class="flex md:w-1/2 xl:w-1/3 w-full ">
-            <div class="w-1/2 ">
+        <div class="flex  md:w-1/2 xl:w-1/3 w-full ">
+            <div class="w-1/2  ">
 
                 <FooterComponent :footer="footers[0]" />
 
@@ -36,7 +36,7 @@ export default {
         </div>
         
         
-<div class="w-full md:w-1/2 xl:w-1/3 flex">
+<div class="w-full md:w-1/2  xl:w-1/3 flex">
 
     <div class=" w-1/2 xl:w-1/2 flex  max-md:p-1 max-md:m-1" v-for="footer in footers.slice(2) " :key="footer.title">
         <FooterComponent :footer="footer" />
@@ -54,9 +54,14 @@ footer{
 }
 
 footer p{
-    font-size:13px !important;
+    font-size:15px !important;
     color:#ccc;
     margin-bottom:3px ;
+}
+@media screen and (max-width: 600px){
+    footer p{
+        font-size: 1rem !important;
+    }
 }
 
 footer h4{

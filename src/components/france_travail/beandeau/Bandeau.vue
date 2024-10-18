@@ -38,7 +38,7 @@
 
         </div>
 
-        <div class="  absolute bottom-0   h-28  bg-black bg-opacity-30 text-white flex justify-around w-full">
+        <div class="  absolute bottom-0  max-sm:h-20 h-28  bg-black bg-opacity-30 text-white flex justify-around w-full">
 
 
             <div class="relative w-20  flex justify-center h-20  ">
@@ -68,7 +68,7 @@
     
     
                 <div v-if="isServiceVisible"
-                    class="z200 absolute sm:rounded-2xl sm:translate-x-1/2 right-32 max-sm:right-0 max-sm:fixed max-sm:w-screen max-sm:h-screen max-sm:top-0 border max-sm:backdrop-blur-xl bg-slate-100 max-sm:bg-black max-sm:bg-opacity-50 text-white ">
+                    class="z200 absolute sm:rounded-2xl sm:translate-x-1/2 right-32  max-sm:right-0 max-sm:fixed max-sm:w-screen max-sm:h-screen max-sm:top-0 border max-sm:backdrop-blur-xl bg-slate-100 max-sm:bg-black max-sm:bg-opacity-50 text-white ">
 
                     <div class="max-sm:hidden">
                         <RoundedXl/>
@@ -91,7 +91,7 @@
 
 
         <div
-            class=" z100  md:w-3/6 sm:w-4/6 max-sm:w-5/6  sm:mt-9  w-full border-green-400 flex-col space-y4 p-5 top-0 absolute m-auto ">
+            class=" z100  md:w-3/6 sm:w-4/6 max-sm:w-11/12  sm:mt-9  w-full border-green-400 flex-col space-y4 p-5 top-0 absolute m-auto ">
 
 
             <div class="max-sm:p-5">

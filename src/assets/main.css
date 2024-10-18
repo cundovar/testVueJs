@@ -48,3 +48,8 @@ h6{
 .z300{
     z-index: 1002;
 }
+@media screen and (max-width: 600px){
+     p,input{
+        font-size: 1rem !important;
+    }
+}

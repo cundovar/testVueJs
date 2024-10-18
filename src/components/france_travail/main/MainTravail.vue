@@ -1,7 +1,7 @@
 <template>
 <main class="  bg-slate-200  ">
 
-    <div class="w-full xl:w-4/6 m-auto space-y-5 ">
+    <div class="w-full 2xl:w-4/6 m-auto  ">
          
         <div class="flex flex-col xl:hidden xl:absolute space-y-2 bg-white p-7 justify-center items-center">
             <div class="">

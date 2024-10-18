@@ -5,7 +5,7 @@
         <div class="border mt-10  shadow-lg max-sm:w-full  overflow-hidden lg:w-[18rem] xl:w-[20.5rem] md:w-[24rem] sm:space-y-3 md:h-[26rem] cursor-pointer bg-slate-100" v-for="article in visibleArticles" :key="article.title">
             <div class="md:p-5 md:pt-0 h-1/2  lg:space-y-3 ">
                 <h3 class="text-xl mb-2">{{ article.title }} </h3>
-                <p>{{ article.content }} </p>
+                <p class="max-sm:text-lg">{{ article.content }} </p>
 
             </div>
             <img class="w-full  h-1/2 object-cover" :src="article.img" />
@@ -71,6 +71,7 @@ export default {
         font-size: .8rem;
 
     }
+
 
     article h3 {
         font-size: 1.2rem;

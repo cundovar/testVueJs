@@ -10,7 +10,7 @@
 
                         <font-awesome-icon :icon="['fa', 'user']"   />
                     </div>
-                    <p class="w-3/4 flex justify-start items-start ">
+                    <p class="w-3/4 flex justify-start  items-start ">
                         Entreprise
                     </p>
                 </div>
@@ -91,11 +91,11 @@
 
 
         <div
-            class=" z100  md:w-3/6 sm:w-4/6 max-sm:w-11/12  sm:mt-9  w-full border-green-400 flex-col space-y4 p-5 top-0 absolute m-auto ">
+            class=" z100  md:w-3/6 sm:w-4/6 max-sm:w-11/12  sm:mt-9  w-full  flex-col space-y4 sm:p-5 top-0 absolute m-auto ">
 
 
             <div class="max-sm:p-5">
-                <h1 class="text-3xl text-center text-white mb-6"> 1 073 968 offres d'emploi disponibles</h1>
+                <h1 class="text-3xl text-center max-sm:w- text-white mb-6"> 1 073 968 offres d'emploi disponibles</h1>
             </div>
 
             <div class="search-container space-x-1 m-auto  flex">

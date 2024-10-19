@@ -2,7 +2,7 @@
     <article class="  flex m-auto  items-center justify-between  flex-wrap border xl:w-[71.3rem] ">
         
         <HautMain/>
-        <div class="border mt-10  shadow-lg max-sm:w-full  overflow-hidden lg:w-[18rem] xl:w-[20.5rem] md:w-[24rem] sm:space-y-3 md:h-[26rem] cursor-pointer bg-slate-100" v-for="article in visibleArticles" :key="article.title">
+        <div class="border mt-10  shadow-lg max-sm:w-full  overflow-hidden  lg:w-[20rem] xl:w-[20.5rem] md:w-[23rem] sm:h-[26rem] sm:w-[20rem] cursor-pointer bg-slate-100" v-for="article in visibleArticles" :key="article.title">
             <div class="md:p-5 md:pt-0 h-1/2  lg:space-y-3 ">
                 <h3 class="text-xl mb-2">{{ article.title }} </h3>
                 <p class="max-sm:text-lg">{{ article.content }} </p>

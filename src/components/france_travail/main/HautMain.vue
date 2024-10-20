@@ -6,13 +6,16 @@
                 <div class="w-1/2 xl:w-1/3 max-sm:w-1/3 h-full sm:w-1/3  m-auto">
                     <img class=" sm:h-36" :src="bloc.img" />
                 </div>
-                <div class="w-1/2 xl:w-2/3 max-sm:w-2/3  h-full space-y-2 p-1 ">
+                <div class="w-1/2 xl:w-2/3 max-sm:w-2/3 max-sm:flex flex-col justify-center items-center  h-full space-y-2 p-1 ">
 
-                    <div class="space-y-3">
+                    <div class="space-y-3 ">
                         <h3 :class="[bloc.colorText, 'text-xl font-medium']"> {{ bloc.title }} </h3>
                         <p class="max-sm:text-lg">{{ bloc.text }} </p>
                     </div>
-                    <ButtonGlobal :label="bloc.buttons" />
+                    <div class="max-sm:w-1/2">
+
+                        <ButtonGlobal :label="bloc.buttons" colorText="textButton max-sm:p-1  " />
+                    </div>
                 </div>
 
             </div>

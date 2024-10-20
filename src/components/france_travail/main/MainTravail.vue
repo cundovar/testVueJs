@@ -19,13 +19,13 @@
               <ButtonGlobal
                label="ENTREPRISE"
                 color="bg4"
-                colorText="text-white"
+                colorText="text-white textButton"
                 />
 
               <ButtonGlobal 
               label="PARTICULIER EMPLOYEUR"
                color="bg3"
-               colorText="text-white"
+               colorText="text-white textButton"
                />
 
            
@@ -57,6 +57,11 @@
 
 .but{
     font-size: 10px;
+}
+@media screen and (max-width:600px){
+    .textButton{
+        font-size: .8rem !important;
+    }
 }
 </style>
 

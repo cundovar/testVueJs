@@ -36,7 +36,7 @@ export default{
  
  <div v-if="isMenuVisible" class=" pb-20   bg-white max-sm:w-full h-dvh  fixed inset-y-16 w-4/12 z200 " style=" overflow-y: auto;">
 <div class="w-11/12 m-auto mt-5  mb-3">
-<div class="absolute right-2 active:border" @click="toggleMenu"   >
+<div class="absolute right-2 active:border cursor-pointer" @click="toggleMenu"   >
     <font-awesome-icon :icon="['fas', 'xmark']" size="xl" style="color: #6f7276;"/>
 </div>
     <div class="mb-6" v-for="menus in Menu" :key="menus.title" >

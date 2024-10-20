@@ -1,7 +1,7 @@
 <template>
-    <nav class=" w-full h-16 bg-white bg-opacity-90 xl border-t  flex fixed overflow-hidden z200 ">
+    <nav class=" w-full h-16 bg-white bg-opacity-90 xl   flex fixed overflow-hidden z200 ">
 
-        <div class="w-2/3 bg-pink-300  h-full flex justify-ceter items-cter">
+        <div class="w-2/3  h-full flex  items-center">
             <div class=" w-16 justify-center border items-center flex cursor-pointer  xl:hidden h-14">
                 <div @click="toggleMenu" class="flex focus:border justify-center items-center w-full h-full">
                     <font-awesome-icon v-if="!isMenuVisible" :icon="['fas', 'bars']" size="xl" :style="{ color: colorIcon }" />
@@ -14,7 +14,7 @@
                 <img class="xl:h-20 object-cover h-full max-sm:w-36" src="/public/images/logoR.png" />
             </div>
 
-            <div class="  w- h-full xl:mr-3 border ml-">
+            <div class="  w- h-full xl:mr-3">
                 <img class=" max-sm:w-48 border  h-full object-cover" src="/public/images/logo.webp" />
             </div>
 

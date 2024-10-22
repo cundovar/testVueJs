@@ -1,6 +1,6 @@
 <template>
 
-<button :class="[color,'flex p-2   justify-center items-center   border rounded-2xl']" >
+<button :class="[color,'flex p-3   justify-center items-center hover:border-zinc-700  border rounded-3xl']" >
   <p  :class="colorText">
       {{ label }}
 

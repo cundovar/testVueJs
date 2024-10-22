@@ -13,7 +13,7 @@
     </article>
 
     <div @click="toggleArticles" class="m-5 border ">
-        <ButtonGlobal colorText=" text-slate-600 border-slate-700 border p-2 rounded-lg active:border-none " :label="buttonText   " color="black"/>
+        <ButtonGlobal colorText=" text-slate-600 border-slate-700  rounded-lg active:border-none " :label="buttonText   " color="black"/>
 
     </div>
 </template>

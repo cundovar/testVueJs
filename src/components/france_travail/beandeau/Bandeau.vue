@@ -68,13 +68,13 @@
     
     
                 <div v-if="isServiceVisible"
-                    class="z200 absolute sm:rounded-2xl sm:translate-x-1/2 right-32  max-sm:right-0 max-sm:fixed max-sm:w-screen max-sm:h-screen max-sm:top-0 border max-sm:backdrop-blur-xl bg-slate-100 max-sm:bg-black max-sm:bg-opacity-50 text-white ">
+                    class="z200 absolute sm:rounded-2xl sm:translate-x-1/2 right-32  max-sm:right-0 max-sm:fixed max-sm:w-screen max-sm:h-screen max-sm:top-0  max-sm:backdrop-blur-xl bg-slate-100 max-sm:bg-black max-sm:bg-opacity-50 text-white ">
 
                     <div class="max-sm:hidden">
                         <RoundedXl/>
                     </div>
-                    <div class="max-sm:block sm:hidden mt-20 relative">
-                        <h1 class="text-white  absolute right-3 top-0 z-300 p-5">
+                    <div class="max-sm:block  sm:hidden mt-10 relative">
+                        <h1 class="text-white  absolute right-3 -top-10 z-300 p-5">
                             <font-awesome-icon :icon="['fas', 'xmark']" @click="togglesServices"   />
                         </h1>
                            <RoundedSm/>

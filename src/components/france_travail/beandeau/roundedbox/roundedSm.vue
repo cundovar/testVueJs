@@ -20,7 +20,7 @@ export default{
 
 <template>
 
-<div  class="  h-full flex-wrap pt-36  flex items-start  justify-around w-full">
+<div  class="  h-full flex-wrap pt-16  pl-5 pr-5  flex items-start  justify-around w-full">
 
     <div class="flex flex-col   m-3  cursor-pointer active:border   w-20 justify-center items-center">
         <div class="h-20 w-20 rounded-full bg-red-500  flex flex-col justify-center items-center">

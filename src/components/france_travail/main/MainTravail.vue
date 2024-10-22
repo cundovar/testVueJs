@@ -25,7 +25,7 @@
               <ButtonGlobal 
               label="PARTICULIER EMPLOYEUR"
                color="bg3"
-               colorText="text-white textButton"
+               colorText="text-white  textButton"
                />
 
            
@@ -57,6 +57,9 @@
 
 .but{
     font-size: 10px;
+}
+.textButton{
+    font-size: .9rem !important;
 }
 @media screen and (max-width:600px){
     .textButton{

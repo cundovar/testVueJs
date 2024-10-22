@@ -2,8 +2,8 @@
     <nav class=" w-full h-16 bg-white bg-opacity-90 xl   flex fixed overflow-hidden z200 ">
 
         <div class="w-2/3  h-full flex  items-center">
-            <div class=" w-16 justify-center border items-center flex cursor-pointer  xl:hidden h-14">
-                <div @click="toggleMenu" class="flex focus:border justify-center items-center w-full h-full">
+            <div class=" w-16 justify-center  items-center flex cursor-pointer  xl:hidden h-14">
+                <div @click="toggleMenu" class="flex bars active:border justify-center items-center w-full h-full">
                     <font-awesome-icon v-if="!isMenuVisible" :icon="['fas', 'bars']" size="xl" :style="{ color: colorIcon }" />
                     <font-awesome-icon v-else :icon="['fas', 'xmark']" size="xl" style="color: #6f7276;"/>
                 </div>
@@ -15,11 +15,11 @@
             </div>
 
             <div class="  w- h-full xl:mr-3">
-                <img class=" max-sm:w-48 border  h-full object-cover" src="/public/images/logo.webp" />
+                <img class=" max-sm:w-48  h-full object-cover" src="/public/images/logo.webp" />
             </div>
 
-            <div @click="toggleMenu"  class="  max-xl:hidden cursor-pointer active:border flex justify-center items-center space-x-3  h-14">
-                <div class="flex  justify-center items-center w-full h-full">
+            <div @click="toggleMenu"  class="max-xl:hidden cursor-pointer active:border flex justify-center items-center space-x-3  h-14">
+                <div class="flex justify-center items-center w-full h-full">
                     <font-awesome-icon :icon="['fas', 'bars']" size="xl" :style="{ color: colorIcon }" />
                     
                 </div>
@@ -77,6 +77,7 @@ export default {
         toggleMenu() {
             this.isMenuVisible = !this.isMenuVisible; 
             eventBus.emit("toggle-menu")
+           document.querySelector('.bars').classList.toggle('bg-stone-300')
         }
     },
     components: {

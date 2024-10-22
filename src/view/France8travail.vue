@@ -13,7 +13,7 @@ import { onBeforeMount, onMounted } from 'vue';
 
 
 <template>
-<div class=" relative border  ">
+<div class=" relative border   ">
    
 <NavTravail/>
 <MenuNav/>
